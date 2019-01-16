@@ -173,6 +173,11 @@ if index(g:bundle_group, 'enhanced') >= 0
 	" ALT_+/- 用于按分隔符扩大缩小 v 选区
 	map <m-=> <Plug>(expand_region_expand)
 	map <m--> <Plug>(expand_region_shrink)
+
+	" YouCompleteMe 補全
+	Plug 'valloric/YouCompleteMe', { 'do': './install.py' }
+
+
 endif
 
 
@@ -517,6 +522,14 @@ if index(g:bundle_group, 'leaderf') >= 0
 	endif
 endif
 
+"----------------------------------------------------------------------
+" Template Snippets
+"----------------------------------------------------------------------
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger="<space>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "----------------------------------------------------------------------
 " 结束插件安装
