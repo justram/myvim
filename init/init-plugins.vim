@@ -527,9 +527,9 @@ endif
 "----------------------------------------------------------------------
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger="<c-space>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+"" Ultisnips
+let g:UltiSnipsExpandTrigger="<c-j>"
 
 "----------------------------------------------------------------------
 " 结束插件安装
